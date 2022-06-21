@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul {
+  width: 800px;
+  height: 800px;
+  border: 10px red solid;
+  display: flex;
+  align-items: stretch;
+}
+ul li {
+  width: 100px;
+  font-size: 50px;
+  background-color: #bfc;
+  text-align: center;
+  line-height: 100px;
+}
+ul li:nth-child(2) {
+  background-color: pink;
+}
+ul li:nth-child(3) {
+  background-color: orange;
+}
+/*# sourceMappingURL=flex-demo.css.map */

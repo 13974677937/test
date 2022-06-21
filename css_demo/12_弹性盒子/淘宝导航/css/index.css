@@ -1,0 +1,21 @@
+.nav {
+  width: 100%;
+}
+.nav-inner {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-inner .item {
+  width: 18%;
+  text-align: center;
+}
+.nav-inner .item a {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+}
+.nav-inner .item a img {
+  width: 100%;
+  margin-bottom: 6px;
+}
+/*# sourceMappingURL=index.css.map */

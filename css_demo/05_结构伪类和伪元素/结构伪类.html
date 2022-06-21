@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>结构伪类</title>
+  <style>
+
+      li:first-child {
+          /*选中第一个li元素*/
+          background-color: red;
+      }
+
+      li:last-child {
+          /*选中最有一个li元素*/
+          background-color: #87ceed;
+      }
+
+      li:nth-child(3) {
+          /*选中第三个li*/
+          background-color: aquamarine;
+      }
+
+      li:nth-last-child(3) {
+          /*选中倒数第三个li*/
+          background-color: blue;
+      }
+  </style>
+</head>
+<body>
+<ul>
+  <li>1</li>
+  <li>2</li>
+  <li>3</li>
+  <li>4</li>
+  <li>5</li>
+  <li>6</li>
+  <li>7</li>
+  <li>8</li>
+</ul>
+</body>
+</html>

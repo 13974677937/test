@@ -1,0 +1,119 @@
+.w,
+.top-bar,
+.banner,
+.menu,
+.course-list {
+  width: 17.325rem;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 5.33333333vw;
+  background-color: #eff0f4;
+}
+.top-bar {
+  display: flex;
+  height: 4.35rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar a {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #24253d;
+}
+.banner img {
+  width: 100%;
+}
+.menu {
+  height: 8.225rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+}
+.menu a {
+  width: 8.175rem;
+  height: 2.6rem;
+  line-height: 2.6rem;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.menu .course {
+  background-color: #f97053;
+}
+.menu .star {
+  background-color: #cd6efe;
+}
+.menu .sub {
+  background-color: #f97053;
+}
+.menu .download {
+  background-color: #1bc4fb;
+}
+.course-list {
+  height: 9.85rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-bottom: 1.15rem;
+}
+.course-list .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.course-list .title h2 {
+  font-size: 0.825rem;
+  color: #24253D;
+  border-left: 2px solid #3e84ff;
+  padding-left: 4px;
+}
+.course-list .title a {
+  font-size: 0.7rem;
+  color: #656565;
+}
+.item-list {
+  display: flex;
+  flex-flow: row;
+  overflow: auto;
+  width: 18rem;
+}
+.item-list .item {
+  box-sizing: border-box;
+  width: 8rem;
+  height: 8.1rem;
+  padding: 0 0.55rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-flow: column;
+  flex: none;
+  justify-content: space-evenly;
+  margin-right: 0.5rem;
+}
+.item-list .item img {
+  width: 100%;
+}
+.item-list .item .course-title {
+  font-size: 0.6rem;
+  color: #24253d;
+}
+.item-list .item .user-info {
+  display: flex;
+  align-items: center;
+}
+.item-list .item .user-info .avatar {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+.item-list .item .user-info .nickname {
+  font-size: 0.6rem;
+  color: #969393;
+  margin-left: 0.25rem;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,137 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.top-bar {
+  height: 48px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+
+  .left-menu {
+    &:active {
+      .nav {
+        display: block;
+      }
+    }
+
+    .menu-icon {
+      width: 18px;
+      height: 48px;
+      position: relative;
+
+      li {
+        width: 18px;
+        height: 1px;
+        background-color: #fff;
+        position: absolute;
+        //修改变形的原点
+        transform-origin: left center;
+        transition: 0.5s;
+      }
+
+      li:nth-child(1) {
+        top: 18px;
+      }
+
+      li:nth-child(2) {
+        top: 24px;
+      }
+
+      li:nth-child(3) {
+        top: 30px;
+      }
+
+      &:active {
+        li:nth-child(1) {
+          transform: rotateZ(42deg);
+        }
+
+        li:nth-child(2) {
+          opacity: 0;
+        }
+
+        li:nth-child(3) {
+          transform: rotateZ(-42deg);
+        }
+      }
+    }
+
+    .nav {
+      display: none;
+      position: absolute;
+      top: 48px;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      padding-top: 60px;
+
+      li {
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 1px solid #4e4e4e;
+
+        a {
+          display: block;
+          line-height: 44px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .logo {
+    a {
+      display: block;
+      width: 122px;
+      height: 32px;
+      background-image: url('../img/dff63979.sprites-index@2x.png');
+      background-size: 400px 400px;
+    }
+  }
+}
+
+//社会中媒体查询
+@media only screen {
+  @media (min-width: 768px) {
+    .top-bar {
+      .left-menu {
+        order: 2;
+        flex: auto;
+        // 隐藏菜单的图标
+        .menu-icon {
+          display: none;
+        }
+
+        // 显示菜单
+        .nav {
+          display: flex;
+          position: static;
+          padding: 0;
+
+          li {
+            width: auto;
+            border-bottom: none;
+
+            a {
+              line-height: 48px;
+            }
+          }
+        }
+      }
+
+
+      .logo {
+        order: 1;
+      }
+
+      .user-info {
+        order: 3;
+      }
+    }
+  }
+}

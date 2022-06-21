@@ -1,0 +1,138 @@
+.w {
+  width: (693/40)+ 0rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: (100vw / 750) * 40;
+  background-color: #eff0f4;
+}
+
+.top-bar:extend(.w) {
+  display: flex;
+  height: (174/40) + 0rem;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    font-size: (50/40) + 0rem;
+    font-weight: bold;
+    color: #24253d;
+  }
+
+}
+
+.banner:extend(.w) {
+  img {
+    width: 100%;
+  }
+}
+
+.menu:extend(.w) {
+  height: (329/40) + 0rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+
+  a {
+    width: (327/40) + 0rem;
+    height: (104/40) + 0rem;
+    line-height: (104/40) + 0rem;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .course {
+    background-color: #f97053;
+  }
+
+  .star {
+    background-color: #cd6efe;
+  }
+
+  .sub {
+    background-color: #f97053;
+  }
+
+  .download {
+    background-color: #1bc4fb;
+  }
+}
+
+.course-list:extend(.w) {
+  height: (394/40) + 0rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-bottom: (46/40) + 0rem;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: (33/40) + 0rem;
+      color: #24253D;
+      border-left: 2px solid #3e84ff;
+      padding-left: 4px;
+    }
+
+    a {
+      font-size: (28/40) + 0rem;
+      color: #656565;
+    }
+  }
+}
+
+.item-list {
+  display: flex;
+  flex-flow: row;
+  overflow: auto;
+  width: (720/40) + 0rem;
+  .item {
+    box-sizing: border-box;
+    width: (320/40) + 0rem;
+    height: (324/40) + 0rem;
+    padding: 0 (22/40)+0rem;
+    background-color: #fff;
+    box-shadow: 0 0 (10/40)+0rem rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    flex: none;
+    justify-content: space-evenly;
+    margin-right: (20/40) + 0rem;
+
+    img {
+      width: 100%;
+    }
+
+    .course-title {
+      font-size: (24/40) + 0rem;
+      color: #24253d;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+
+      .avatar {
+        width: (42/40) + 0rem;
+        height: (42/40) + 0rem;
+      }
+
+      .nickname {
+        font-size: (24/40) + 0rem;
+        color: #969393;
+        margin-left: (10/40) + 0rem;
+      }
+    }
+
+  }
+}
