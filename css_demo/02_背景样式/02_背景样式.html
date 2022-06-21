@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>背景样式</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .demo {
+        height: 929px;
+        width: 100%;
+        /*背景样色 默认值透明*/
+        background-color: rgba(0, 0, 0, 0);
+        /*背景图片 默认咋子水平垂直方向平铺*/
+        background-image: url('./img/1.jpg');
+        /*背景平铺 repeat 水平垂直都平铺  no-repeat 不平铺   repeat-x 水平平铺 repeat-y 垂直平铺*/
+        background-repeat: no-repeat;
+        /* 以父元素的百分比来设置背景图像的宽度和高度。*/
+        background-size: 100% 100%;
+        /*背景图片的位置  第一个值为水平位置 第二个值为垂直位置 可以使数字和英文*/
+        background-position: center;
+        /*背景相关连写 属性不分顺序*/
+        /*background: color image repeat position;*/
+    }
+</style>
+<body>
+<div class="demo">
+
+</div>
+
+</body>
+</html>

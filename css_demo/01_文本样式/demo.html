@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>demo</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+
+      .clearfix::before,
+      .clearfix::after {
+          content: '';
+          display: table;
+          clear: both;
+      }
+
+      body {
+          font-size: 14px;
+          line-height: 1.5;
+          font-family: "Microsoft YaHei,Heiti SC", serif;
+      }
+
+      .top-bar-wrapper {
+          width: 100%;
+          height: 30px;
+          line-height: 30px;
+          border-bottom: 1px #ddd solid;
+          background-color: #E3E4E5;
+      }
+
+      .top-bar {
+          width: 1190px;
+          margin: 0 auto;
+          position: relative;
+      }
+
+      .top-bar a, .top-bar span {
+          text-decoration: none;
+          color: #999;
+      }
+
+      .top-bar a:hover,
+      .top-bar a.highlight {
+          color: #F10125;
+      }
+
+
+      .location {
+          float: left;
+      }
+
+      .location .city-list {
+          /*设置绝对定位，使其不占文档流的位置*/
+          position: absolute;
+          top:31px;
+          display: none;
+          width: 320px;
+          height: 436px;
+          background-color: #fff;
+          border: 1px solid rgb(204, 204, 204);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+      }
+
+      /*当鼠标移入到 location 是，显示city-list*/
+      .location:hover .city-list {
+          display: block;
+      }
+
+      .current-city{
+          padding: 0 10px 1px 10px ;
+          border: 1px solid transparent;
+          border-bottom: none
+      }
+      
+      .location:hover .current-city{
+          position: relative;
+          z-index: 9999;
+          background-color: #fff;
+          border: 1px solid rgb(204,204,204);
+          border-bottom: none
+      }
+      .shortcut {
+          float: right;
+      }
+
+      .shortcut .line {
+          width: 1px;
+          height: 10px;
+          background-color: #999;
+          margin: 10px 12px;
+      }
+
+      .shortcut li {
+          float: left;
+      }
+  </style>
+</head>
+<body>
+<!--创建外部容器-->
+<div class="top-bar-wrapper">
+  <!--创建内容容器-->
+  <div class="top-bar clearfix">
+    <!--左侧的菜单-->
+    <div class="location">
+      <div class="current-city">
+        <a href="javascript:">北京</a>
+      </div>
+      <div class="city-list">
+
+      </div>
+    </div>
+    <!--右侧菜单-->
+    <ul class="shortcut clearfix">
+      <li>
+        <a href="javascript:">你好，请登录</a>
+        <a class="highlight" href="javascript:">免费注册</a>
+      </li>
+      <!--分割线-->
+      <li class="line"></li>
+      <li>
+        <a href="javascript:">我的订单</a>
+      </li>
+      <li class="line"></li>
+      <li>
+        <a href="javascript:">我的京东</a>
+      </li>
+      <li class="line"></li>
+      <li>
+        <a href="javascript:">京东会员</a>
+      </li>
+      <li class="line"></li>
+      <li>
+        <a href="javascript:" class="highlight">企业采购</a>
+      </li>
+      <li class="line"></li>
+      <li>
+        <span>客户服务</span>
+      </li>
+      <li class="line"></li>
+      <li>
+        <span>网站导航</span>
+      </li>
+      <li class="line"></li>
+      <li>
+        <span>手机京东</span>
+      </li>
+    </ul>
+
+  </div>
+</div>
+</body>
+</html>
